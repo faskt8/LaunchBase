@@ -1,0 +1,36 @@
+*{
+  /*para estilizar toda a pagina html usa essa tag *{} */
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  background: #282a36;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+header{
+  padding: 32px;
+  border-bottom: 1px solid #333;
+  background: rgba(0, 0, 0, 0.1);
+}
+/*combinação de seletores Ex: dentro do header que pegar todas as divs que
+tiverem a tag a , usando literalmente a cascata, ido diretamente ao elemento
+que quero alterar*/
+header div  {
+  text-align: center;
+}
+/*color sempre é usado para textos*/
+header div a{
+  color: white;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 16px;
+  text-decoration: none;
+}
+/*um outro tipo de seletor , usando :, pode abrir
+muito mais opções , e é o que vamos usar , no caso o 
+hover - para uma ação quando passar o mouse em cima*/
+header div a:hover{
+  color: #50fa7b;
+  transition: color 200ms;
+}
